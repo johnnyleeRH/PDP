@@ -1,0 +1,2 @@
+### 几种模式
+- `NO_LEARNING / E2E / HYBRID / RL_TEST / E2E_TEST / HYBRID_TEST`
