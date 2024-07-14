@@ -12,6 +12,12 @@
 - 轨迹拼接`ComputeStitchingTrajectory`，确认是否要重新规划
 ### InitFrame
 - 包含一次规划所需要的所有信息
+  - sequence_num_
+  - local_view_
+  - planning_start_point_
+  - vehicle_state_
+  - reference_line_provider_
+- CreateReferenceLineInfo
 ### TrafficDecider
 ### Plan
 - `public_road_planner`进入`scenario`流程
