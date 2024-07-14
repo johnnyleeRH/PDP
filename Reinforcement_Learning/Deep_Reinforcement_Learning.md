@@ -1,0 +1,5 @@
+## [李宏毅 深度强化学习](https://www.bilibili.com/video/BV1XP4y1d7Bk/?spm_id_from=333.337.search-card.all.click&vd_source=711f09f2f09ff87d7fcd85bbd346b892)
+- lecture 1
+  - RL与Supervised区别
+    - supervised， learning from teacher，不一定有最优解
+    - rl，有reward
