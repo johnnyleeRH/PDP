@@ -3,3 +3,10 @@
   - RL与Supervised区别
     - supervised， learning from teacher，不一定有最优解
     - rl，有reward
+  - difficulties of rl
+    - reward delay
+    - agent's actions affect the subsequent data it receives
+  - outline
+    - learning an actor
+    - learning a critic
+    - actor + critic
