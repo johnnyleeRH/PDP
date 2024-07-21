@@ -2,3 +2,4 @@
   - 101.231.3.117 :44235   u21000355/Jrqh2024!@#
   - sudo su - root命令切到root
   - 猜测运行进程是 policyserver
+- `policy.tpl`为策略及对应的动态库，或者是`policyserver.xml`，查看具体怎么调用

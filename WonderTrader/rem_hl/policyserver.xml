@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<policyserver auth="">
+    <global />
+    <users>
+        <user name="admin" password="123456" />
+    </users>
+    <futures>
+        <trade name="910118" type="ctp" configfile="./config.xml" userid="910118" password="165526" />
+        <md name="ctp_md1" type="ctp" configfile="./config.xml" userid="910118" password="165526" />
+    </futures>
+    <stock>
+        <!--trade name="ctpsec1" type="secctp" configfile="./secconfig_mock.xml" userid="020000001748" password="123321" />
+        
+
+
+<md name="ctpsecmd" type="secctp" configfile="./secconfig_mock.xml" userid="020000001748" password="123321" /-->
+    </stock>
+    <policies>
+        <policy so="./libSpreadPolicyFAK.so" name="agtest" status="0">
+            <autostart>false</autostart>
+            <futures>
+                <trade alias="" ref="910118" hedge="1" shfe="false" />
+                <md ref="ctp_md1" />
+            </futures>
+            <stock />
+            <ext />
+            <param name="__owner__" value="admin" />
+            <param name="_acct" value="910118" />
+            <param name="_statusmsg" value="0" />
+            <param name="_type" value="spread_policyFAK" />
+            <param name="bIsToday" value="1" />
+            <param name="bT2FAK" value="1" />
+            <param name="eSTG" value="3" />
+            <param name="eT2Stg" value="0" />
+            <param name="fLC" value="26.0" />
+            <param name="fLO" value="22.0" />
+            <param name="fSC" value="25.0" />
+            <param name="fSO" value="30.0" />
+            <param name="fT1tick" value="1.0" />
+            <param name="fT2tick" value="1" />
+            <param name="f_destpricediff" value="0" />
+            <param name="f_realpricediff" value="0" />
+            <param name="long_pos" value="0" />
+            <param name="nDirection" value="0" />
+            <param name="nHoldPos" value="0" />
+            <param name="nMaxPos" value="3" />
+            <param name="nPV" value="15" />
+            <param name="nT1Over" value="0.0" />
+            <param name="nT1Wait" value="3.0" />
+            <param name="nT2Over" value="0.0" />
+            <param name="nT2Wait" value="5.0" />
+            <param name="nVol" value="2" />
+            <param name="sIns1" value="ag2410" />
+            <param name="sIns2" value="ag2408" />
+            <param name="short_pos" value="0" />
+        </policy>
+        <policy so="./libSpreadPolicyFAK.so" name="sntest" status="0">
+            <autostart>false</autostart>
+            <futures>
+                <trade alias="" ref="910118" hedge="1" shfe="false" />
+                <md ref="ctp_md1" />
+            </futures>
+            <stock />
+            <ext />
+            <param name="__owner__" value="admin" />
+            <param name="_acct" value="910118" />
+            <param name="_statusmsg" value="long" />
+            <param name="_type" value="spread_policyFAK" />
+            <param name="bIsToday" value="2" />
+            <param name="bT2FAK" value="1" />
+            <param name="eSTG" value="3" />
+            <param name="eT2Stg" value="0" />
+            <param name="fLC" value="660.0" />
+            <param name="fLO" value="440.0" />
+            <param name="fSC" value="610.0" />
+            <param name="fSO" value="710.0" />
+            <param name="fT1tick" value="10.0" />
+            <param name="fT2tick" value="10" />
+            <param name="f_destpricediff" value="530.000000" />
+            <param name="f_realpricediff" value="540.000000" />
+            <param name="long_pos" value="1" />
+            <param name="nDirection" value="1" />
+            <param name="nHoldPos" value="0" />
+            <param name="nMaxPos" value="1" />
+            <param name="nPV" value="6" />
+            <param name="nT1Over" value="0.0" />
+            <param name="nT1Wait" value="2.0" />
+            <param name="nT2Over" value="2.0" />
+            <param name="nT2Wait" value="10.0" />
+            <param name="nVol" value="1" />
+            <param name="sIns1" value="sn2409" />
+            <param name="sIns2" value="sn2408" />
+            <param name="short_pos" value="1" />
+        </policy>
+        <policy so="./libSpreadPolicyFAK.so" name="ag0110test" status="0">
+            <autostart>false</autostart>
+            <futures>
+                <trade alias="" ref="910118" hedge="1" shfe="false" />
+                <md ref="ctp_md1" />
+            </futures>
+            <stock />
+            <ext />
+            <param name="__owner__" value="admin" />
+            <param name="_acct" value="910118" />
+            <param name="_statusmsg" value="0" />
+            <param name="_type" value="spread_policyFAK" />
+            <param name="bIsToday" value="1" />
+            <param name="bT2FAK" value="1" />
+            <param name="eSTG" value="3" />
+            <param name="eT2Stg" value="0" />
+            <param name="fLC" value="46.0" />
+            <param name="fLO" value="38.0" />
+            <param name="fSC" value="44.0" />
+            <param name="fSO" value="50.0" />
+            <param name="fT1tick" value="1.0" />
+            <param name="fT2tick" value="1" />
+            <param name="f_destpricediff" value="0" />
+            <param name="f_realpricediff" value="0" />
+            <param name="long_pos" value="0" />
+            <param name="nDirection" value="0" />
+            <param name="nHoldPos" value="0" />
+            <param name="nMaxPos" value="1" />
+            <param name="nPV" value="20" />
+            <param name="nT1Over" value="0.0" />
+            <param name="nT1Wait" value="3.0" />
+            <param name="nT2Over" value="0.0" />
+            <param name="nT2Wait" value="5.0" />
+            <param name="nVol" value="1" />
+            <param name="sIns1" value="ag2501" />
+            <param name="sIns2" value="ag2410" />
+            <param name="short_pos" value="0" />
+        </policy>
+        <policy so="./libSpreadPolicyFAK.so" name="pbtest" status="0">
+            <autostart>false</autostart>
+            <futures>
+                <trade alias="" ref="910118" hedge="1" shfe="false" />
+                <md ref="ctp_md1" />
+            </futures>
+            <stock />
+            <ext />
+            <param name="__owner__" value="admin" />
+            <param name="_acct" value="910118" />
+            <param name="_statusmsg" value="0" />
+            <param name="_type" value="spread_policyFAK" />
+            <param name="bIsToday" value="1" />
+            <param name="bT2FAK" value="1" />
+            <param name="eSTG" value="3" />
+            <param name="eT2Stg" value="0" />
+            <param name="fLC" value="-405.0" />
+            <param name="fLO" value="-420.0" />
+            <param name="fSC" value="-355.0" />
+            <param name="fSO" value="-200.0" />
+            <param name="fT1tick" value="5.0" />
+            <param name="fT2tick" value="5" />
+            <param name="f_destpricediff" value="0" />
+            <param name="f_realpricediff" value="0" />
+            <param name="long_pos" value="0" />
+            <param name="nDirection" value="0" />
+            <param name="nHoldPos" value="0" />
+            <param name="nMaxPos" value="1" />
+            <param name="nPV" value="20" />
+            <param name="nT1Over" value="0.0" />
+            <param name="nT1Wait" value="1.0" />
+            <param name="nT2Over" value="0.0" />
+            <param name="nT2Wait" value="2.0" />
+            <param name="nVol" value="1" />
+            <param name="sIns1" value="pb2409" />
+            <param name="sIns2" value="pb2408" />
+            <param name="short_pos" value="0" />
+        </policy>
+        <policy so="./libSpreadPolicyFAK.so" name="ni0809" status="0">
+            <autostart>false</autostart>
+            <futures>
+                <trade alias="" ref="910118" hedge="1" shfe="false" />
+                <md ref="ctp_md1" />
+            </futures>
+            <stock />
+            <ext />
+            <param name="__owner__" value="admin" />
+            <param name="_acct" value="910118" />
+            <param name="_statusmsg" value="short" />
+            <param name="_type" value="spread_policyFAK" />
+            <param name="bIsToday" value="1" />
+            <param name="bT2FAK" value="1" />
+            <param name="eSTG" value="3" />
+            <param name="eT2Stg" value="0" />
+            <param name="fLC" value="-240.0" />
+            <param name="fLO" value="-430.0" />
+            <param name="fSC" value="-360.0" />
+            <param name="fSO" value="-230.0" />
+            <param name="fT1tick" value="10.0" />
+            <param name="fT2tick" value="10" />
+            <param name="f_destpricediff" value="-230.000000" />
+            <param name="f_realpricediff" value="-255.714286" />
+            <param name="long_pos" value="7" />
+            <param name="nDirection" value="-1" />
+            <param name="nHoldPos" value="0" />
+            <param name="nMaxPos" value="7" />
+            <param name="nPV" value="8" />
+            <param name="nT1Over" value="0.0" />
+            <param name="nT1Wait" value="5.0" />
+            <param name="nT2Over" value="0.0" />
+            <param name="nT2Wait" value="10.0" />
+            <param name="nVol" value="2" />
+            <param name="sIns1" value="ni2408" />
+            <param name="sIns2" value="ni2409" />
+            <param name="short_pos" value="7" />
+        </policy>
+        <policy so="./libSpreadPolicyFAK.so" name="ag0908" status="0">
+            <autostart>false</autostart>
+            <futures>
+                <trade alias="" ref="910118" hedge="1" shfe="false" />
+                <md ref="ctp_md1" />
+            </futures>
+            <stock />
+            <ext />
+            <param name="__owner__" value="admin" />
+            <param name="_acct" value="910118" />
+            <param name="_statusmsg" value="0" />
+            <param name="_type" value="spread_policyFAK" />
+            <param name="bIsToday" value="1" />
+            <param name="bT2FAK" value="1" />
+            <param name="eSTG" value="3" />
+            <param name="eT2Stg" value="0" />
+            <param name="fLC" value="17.0" />
+            <param name="fLO" value="12.0" />
+            <param name="fSC" value="12.0" />
+            <param name="fSO" value="18.0" />
+            <param name="fT1tick" value="1.0" />
+            <param name="fT2tick" value="1" />
+            <param name="f_destpricediff" value="0" />
+            <param name="f_realpricediff" value="0" />
+            <param name="long_pos" value="0" />
+            <param name="nDirection" value="0" />
+            <param name="nHoldPos" value="0" />
+            <param name="nMaxPos" value="1" />
+            <param name="nPV" value="20" />
+            <param name="nT1Over" value="0.0" />
+            <param name="nT1Wait" value="3.0" />
+            <param name="nT2Over" value="0.0" />
+            <param name="nT2Wait" value="5.0" />
+            <param name="nVol" value="1" />
+            <param name="sIns1" value="ag2409" />
+            <param name="sIns2" value="ag2408" />
+            <param name="short_pos" value="0" />
+        </policy>
+        <policy so="./libSpreadPolicyFAK.so" name="ag0910" status="0">
+            <autostart>false</autostart>
+            <futures>
+                <trade alias="" ref="910118" hedge="1" shfe="false" />
+                <md ref="ctp_md1" />
+            </futures>
+            <stock />
+            <ext />
+            <param name="__owner__" value="admin" />
+            <param name="_acct" value="910118" />
+            <param name="_statusmsg" value="0" />
+            <param name="_type" value="spread_policyFAK" />
+            <param name="bIsToday" value="1" />
+            <param name="bT2FAK" value="1" />
+            <param name="eSTG" value="3" />
+            <param name="eT2Stg" value="0" />
+            <param name="fLC" value="-10.0" />
+            <param name="fLO" value="-15.0" />
+            <param name="fSC" value="-11.0" />
+            <param name="fSO" value="-8.0" />
+            <param name="fT1tick" value="1.0" />
+            <param name="fT2tick" value="1" />
+            <param name="f_destpricediff" value="0" />
+            <param name="f_realpricediff" value="0" />
+            <param name="long_pos" value="0" />
+            <param name="nDirection" value="0" />
+            <param name="nHoldPos" value="0" />
+            <param name="nMaxPos" value="1" />
+            <param name="nPV" value="20" />
+            <param name="nT1Over" value="0.0" />
+            <param name="nT1Wait" value="5.0" />
+            <param name="nT2Over" value="0.0" />
+            <param name="nT2Wait" value="5.0" />
+            <param name="nVol" value="1" />
+            <param name="sIns1" value="ag2409" />
+            <param name="sIns2" value="ag2410" />
+            <param name="short_pos" value="0" />
+        </policy>
+        <policy so="./libDataTimeRecording.so" name="ag1008" status="0">
+            <autostart>false</autostart>
+            <futures>
+                <trade alias="" ref="910118" hedge="1" shfe="false" />
+                <md ref="ctp_md1" />
+            </futures>
+            <stock />
+            <ext />
+            <param name="__owner__" value="admin" />
+            <param name="_acct" value="910118" />
+            <param name="_type" value="data_recording" />
+            <param name="sIns1" value="ag2410" />
+            <param name="sIns2" value="ag2408" />
+        </policy>
+        <policy so="./libSpreadPolicyFAK.so" name="ag2502-2410" status="0">
+            <autostart>false</autostart>
+            <futures>
+                <trade alias="" ref="910118" hedge="1" shfe="false" />
+                <md ref="ctp_md1" />
+            </futures>
+            <stock />
+            <ext />
+            <param name="__owner__" value="admin" />
+            <param name="_acct" value="910118" />
+            <param name="_type" value="spread_policyFAK" />
+            <param name="bIsToday" value="1" />
+            <param name="bT2FAK" value="1" />
+            <param name="eSTG" value="3" />
+            <param name="eT2Stg" value="0" />
+            <param name="fLC" value="55.0" />
+            <param name="fLO" value="52.0" />
+            <param name="fSC" value="57.0" />
+            <param name="fSO" value="62.0" />
+            <param name="fT1tick" value="1.0" />
+            <param name="fT2tick" value="1" />
+            <param name="long_pos" value="0" />
+            <param name="nDirection" value="0" />
+            <param name="nHoldPos" value="0" />
+            <param name="nMaxPos" value="1" />
+            <param name="nPV" value="4" />
+            <param name="nT1Over" value="0.0" />
+            <param name="nT1Wait" value="5.0" />
+            <param name="nT2Over" value="1.0" />
+            <param name="nT2Wait" value="5.0" />
+            <param name="nVol" value="1" />
+            <param name="sIns1" value="ag2502" />
+            <param name="sIns2" value="ag2410" />
+            <param name="short_pos" value="0" />
+        </policy>
+        <policy so="./libSpreadPolicyFAK.so" name="ag0212" status="0">
+            <autostart>false</autostart>
+            <futures>
+                <trade alias="" ref="910118" hedge="1" shfe="false" />
+                <md ref="ctp_md1" />
+            </futures>
+            <stock />
+            <ext />
+            <param name="__owner__" value="admin" />
+            <param name="_acct" value="910118" />
+            <param name="_type" value="spread_policyFAK" />
+            <param name="bIsToday" value="1" />
+            <param name="bT2FAK" value="1" />
+            <param name="eSTG" value="3" />
+            <param name="eT2Stg" value="0" />
+            <param name="fLC" value="58.0" />
+            <param name="fLO" value="53.0" />
+            <param name="fSC" value="55.0" />
+            <param name="fSO" value="62.0" />
+            <param name="fT1tick" value="10.0" />
+            <param name="fT2tick" value="1" />
+            <param name="long_pos" value="0" />
+            <param name="nDirection" value="0" />
+            <param name="nHoldPos" value="0" />
+            <param name="nMaxPos" value="1" />
+            <param name="nPV" value="12" />
+            <param name="nT1Over" value="0.0" />
+            <param name="nT1Wait" value="5.0" />
+            <param name="nT2Over" value="1.0" />
+            <param name="nT2Wait" value="5.0" />
+            <param name="nVol" value="1" />
+            <param name="sIns1" value="ag2502" />
+            <param name="sIns2" value="ag2410" />
+            <param name="short_pos" value="0" />
+        </policy>
+        <policy so="./libSpreadPolicyFAK.so" name="ag2501-ag2408" status="0">
+            <autostart>false</autostart>
+            <futures>
+                <trade alias="" ref="910118" hedge="1" shfe="false" />
+                <md ref="ctp_md1" />
+            </futures>
+            <stock />
+            <ext />
+            <param name="__owner__" value="admin" />
+            <param name="_acct" value="910118" />
+            <param name="_statusmsg" value="0" />
+            <param name="_type" value="spread_policyFAK" />
+            <param name="bIsToday" value="1" />
+            <param name="bT2FAK" value="1" />
+            <param name="eSTG" value="3" />
+            <param name="eT2Stg" value="0" />
+            <param name="fLC" value="62.0" />
+            <param name="fLO" value="56.0" />
+            <param name="fSC" value="68.0" />
+            <param name="fSO" value="73.0" />
+            <param name="fT1tick" value="1.0" />
+            <param name="fT2tick" value="1" />
+            <param name="f_destpricediff" value="0" />
+            <param name="f_realpricediff" value="0" />
+            <param name="long_pos" value="0" />
+            <param name="nDirection" value="0" />
+            <param name="nHoldPos" value="0" />
+            <param name="nMaxPos" value="1" />
+            <param name="nPV" value="20" />
+            <param name="nT1Over" value="0.0" />
+            <param name="nT1Wait" value="5.0" />
+            <param name="nT2Over" value="0.0" />
+            <param name="nT2Wait" value="5.0" />
+            <param name="nVol" value="1" />
+            <param name="sIns1" value="ag2501" />
+            <param name="sIns2" value="ag2408" />
+            <param name="short_pos" value="0" />
+        </policy>
+        <policy so="./libSpreadPolicyFAK.so" name="ag1008_2" status="0">
+            <autostart>false</autostart>
+            <futures>
+                <trade alias="" ref="910118" hedge="1" shfe="false" />
+                <md ref="ctp_md1" />
+            </futures>
+            <stock />
+            <ext />
+            <param name="__owner__" value="admin" />
+            <param name="_acct" value="910118" />
+            <param name="_statusmsg" value="0" />
+            <param name="_type" value="spread_policyFAK" />
+            <param name="bIsToday" value="1" />
+            <param name="bT2FAK" value="1" />
+            <param name="eSTG" value="3" />
+            <param name="eT2Stg" value="0" />
+            <param name="fLC" value="26.0" />
+            <param name="fLO" value="22.0" />
+            <param name="fSC" value="25.0" />
+            <param name="fSO" value="30.0" />
+            <param name="fT1tick" value="1.0" />
+            <param name="fT2tick" value="1" />
+            <param name="f_destpricediff" value="0" />
+            <param name="f_realpricediff" value="0" />
+            <param name="long_pos" value="0" />
+            <param name="nDirection" value="0" />
+            <param name="nHoldPos" value="0" />
+            <param name="nMaxPos" value="2" />
+            <param name="nPV" value="20" />
+            <param name="nT1Over" value="0.0" />
+            <param name="nT1Wait" value="5.0" />
+            <param name="nT2Over" value="0.0" />
+            <param name="nT2Wait" value="5.0" />
+            <param name="nVol" value="2" />
+            <param name="sIns1" value="ag2410" />
+            <param name="sIns2" value="ag2408" />
+            <param name="short_pos" value="0" />
+        </policy>
+        <policy so="./libSpreadPolicyFAK.so" name="ag2502_2412" status="0">
+            <autostart>false</autostart>
+            <futures>
+                <trade alias="" ref="910118" hedge="1" shfe="false" />
+                <md ref="ctp_md1" />
+            </futures>
+            <stock />
+            <ext />
+            <param name="__owner__" value="admin" />
+            <param name="_acct" value="910118" />
+            <param name="_type" value="spread_policyFAK" />
+            <param name="bIsToday" value="1" />
+            <param name="bT2FAK" value="1" />
+            <param name="eSTG" value="3" />
+            <param name="eT2Stg" value="0" />
+            <param name="fLC" value="56.0" />
+            <param name="fLO" value="42.0" />
+            <param name="fSC" value="55.0" />
+            <param name="fSO" value="62.0" />
+            <param name="fT1tick" value="1.0" />
+            <param name="fT2tick" value="1" />
+            <param name="long_pos" value="0" />
+            <param name="nDirection" value="0" />
+            <param name="nHoldPos" value="0" />
+            <param name="nMaxPos" value="1" />
+            <param name="nPV" value="10" />
+            <param name="nT1Over" value="0.0" />
+            <param name="nT1Wait" value="5.0" />
+            <param name="nT2Over" value="1.0" />
+            <param name="nT2Wait" value="5.0" />
+            <param name="nVol" value="1" />
+            <param name="sIns1" value="ag2502" />
+            <param name="sIns2" value="ag2410" />
+            <param name="short_pos" value="0" />
+        </policy>
+        <policy so="./libSpreadPolicyFAK.so" name="ag1012" status="0">
+            <autostart>false</autostart>
+            <futures>
+                <trade alias="" ref="910118" hedge="1" shfe="false" />
+                <md ref="ctp_md1" />
+            </futures>
+            <stock />
+            <ext />
+            <param name="__owner__" value="admin" />
+            <param name="_acct" value="910118" />
+            <param name="_statusmsg" value="0" />
+            <param name="_type" value="spread_policyFAK" />
+            <param name="bIsToday" value="1" />
+            <param name="bT2FAK" value="1" />
+            <param name="eSTG" value="3" />
+            <param name="eT2Stg" value="0" />
+            <param name="fLC" value="-25.0" />
+            <param name="fLO" value="-30.0" />
+            <param name="fSC" value="-25.0" />
+            <param name="fSO" value="-19.0" />
+            <param name="fT1tick" value="1.0" />
+            <param name="fT2tick" value="1" />
+            <param name="f_destpricediff" value="0" />
+            <param name="f_realpricediff" value="0" />
+            <param name="long_pos" value="0" />
+            <param name="nDirection" value="0" />
+            <param name="nHoldPos" value="0" />
+            <param name="nMaxPos" value="2" />
+            <param name="nPV" value="15" />
+            <param name="nT1Over" value="0.0" />
+            <param name="nT1Wait" value="3.0" />
+            <param name="nT2Over" value="0.0" />
+            <param name="nT2Wait" value="5.0" />
+            <param name="nVol" value="1" />
+            <param name="sIns1" value="ag2410" />
+            <param name="sIns2" value="ag2412" />
+            <param name="short_pos" value="0" />
+        </policy>
+        <policy so="./libSpreadPolicyFAK.so" name="ag1110" status="0">
+            <autostart>false</autostart>
+            <futures>
+                <trade alias="" ref="910118" hedge="1" shfe="false" />
+                <md ref="ctp_md1" />
+            </futures>
+            <stock />
+            <ext />
+            <param name="__owner__" value="admin" />
+            <param name="_acct" value="910118" />
+            <param name="_statusmsg" value="0" />
+            <param name="_type" value="spread_policyFAK" />
+            <param name="bIsToday" value="1" />
+            <param name="bT2FAK" value="1" />
+            <param name="eSTG" value="2" />
+            <param name="eT2Stg" value="0" />
+            <param name="fLC" value="15.0" />
+            <param name="fLO" value="11.0" />
+            <param name="fSC" value="13.0" />
+            <param name="fSO" value="17.0" />
+            <param name="fT1tick" value="1.0" />
+            <param name="fT2tick" value="1" />
+            <param name="f_destpricediff" value="0" />
+            <param name="f_realpricediff" value="0" />
+            <param name="long_pos" value="0" />
+            <param name="nDirection" value="0" />
+            <param name="nHoldPos" value="0" />
+            <param name="nMaxPos" value="1" />
+            <param name="nPV" value="10" />
+            <param name="nT1Over" value="0.0" />
+            <param name="nT1Wait" value="5.0" />
+            <param name="nT2Over" value="0.0" />
+            <param name="nT2Wait" value="5.0" />
+            <param name="nVol" value="1" />
+            <param name="sIns1" value="ag2411" />
+            <param name="sIns2" value="ag2410" />
+            <param name="short_pos" value="0" />
+        </policy>
+        <policy so="./libSpreadPolicyFAK.so" name="zn0809" status="0">
+            <autostart>false</autostart>
+            <futures>
+                <trade alias="" ref="910118" hedge="1" shfe="false" />
+                <md ref="ctp_md1" />
+            </futures>
+            <stock />
+            <ext />
+            <param name="__owner__" value="admin" />
+            <param name="_acct" value="910118" />
+            <param name="_statusmsg" value="0" />
+            <param name="_type" value="spread_policyFAK" />
+            <param name="bIsToday" value="1" />
+            <param name="bT2FAK" value="1" />
+            <param name="eSTG" value="2" />
+            <param name="eT2Stg" value="0" />
+            <param name="fLC" value="-45.0" />
+            <param name="fLO" value="-60.0" />
+            <param name="fSC" value="-35.0" />
+            <param name="fSO" value="-20.0" />
+            <param name="fT1tick" value="5.0" />
+            <param name="fT2tick" value="5" />
+            <param name="f_destpricediff" value="0" />
+            <param name="f_realpricediff" value="0" />
+            <param name="long_pos" value="0" />
+            <param name="nDirection" value="0" />
+            <param name="nHoldPos" value="0" />
+            <param name="nMaxPos" value="1" />
+            <param name="nPV" value="15" />
+            <param name="nT1Over" value="0.0" />
+            <param name="nT1Wait" value="5.0" />
+            <param name="nT2Over" value="0.0" />
+            <param name="nT2Wait" value="5.0" />
+            <param name="nVol" value="1" />
+            <param name="sIns1" value="zn2408" />
+            <param name="sIns2" value="zn2409" />
+            <param name="short_pos" value="0" />
+        </policy>
+        <policy so="./libSpreadPolicyFAK.so" name="zn1009" status="0">
+            <autostart>false</autostart>
+            <futures>
+                <trade alias="" ref="910118" hedge="1" shfe="false" />
+                <md ref="ctp_md1" />
+            </futures>
+            <stock />
+            <ext />
+            <param name="__owner__" value="admin" />
+            <param name="_acct" value="910118" />
+            <param name="_type" value="spread_policyFAK" />
+            <param name="bIsToday" value="1" />
+            <param name="bT2FAK" value="1" />
+            <param name="eSTG" value="3" />
+            <param name="eT2Stg" value="0" />
+            <param name="fLC" value="700" />
+            <param name="fLO" value="550" />
+            <param name="fSC" value="600" />
+            <param name="fSO" value="750" />
+            <param name="fT1tick" value="5" />
+            <param name="fT2tick" value="5" />
+            <param name="long_pos" value="0" />
+            <param name="nDirection" value="0" />
+            <param name="nHoldPos" value="0" />
+            <param name="nMaxPos" value="1" />
+            <param name="nPV" value="20" />
+            <param name="nT1Over" value="5" />
+            <param name="nT1Wait" value="0" />
+            <param name="nT2Over" value="1" />
+            <param name="nT2Wait" value="0" />
+            <param name="nVol" value="1" />
+            <param name="sIns1" value="zn2410" />
+            <param name="sIns2" value="zn2409" />
+            <param name="short_pos" value="0" />
+        </policy>
+        <policy so="./libSpreadPolicyFAK.so" name="ag0109" status="0">
+            <autostart>false</autostart>
+            <futures>
+                <trade alias="" ref="910118" hedge="1" shfe="true" />
+                <md ref="ctp_md1" />
+            </futures>
+            <stock />
+            <ext />
+            <param name="__owner__" value="admin" />
+            <param name="_acct" value="910118" />
+            <param name="_statusmsg" value="0" />
+            <param name="_type" value="spread_policyFAK" />
+            <param name="bIsToday" value="1" />
+            <param name="bT2FAK" value="1" />
+            <param name="eSTG" value="2" />
+            <param name="eT2Stg" value="0" />
+            <param name="fLC" value="50.0" />
+            <param name="fLO" value="30.0" />
+            <param name="fSC" value="40.0" />
+            <param name="fSO" value="66.0" />
+            <param name="fT1tick" value="1.0" />
+            <param name="fT2tick" value="1" />
+            <param name="f_destpricediff" value="0" />
+            <param name="f_realpricediff" value="0" />
+            <param name="long_pos" value="0" />
+            <param name="nDirection" value="0" />
+            <param name="nHoldPos" value="0" />
+            <param name="nMaxPos" value="1" />
+            <param name="nPV" value="6" />
+            <param name="nT1Over" value="1.0" />
+            <param name="nT1Wait" value="5.0" />
+            <param name="nT2Over" value="1.0" />
+            <param name="nT2Wait" value="5.0" />
+            <param name="nVol" value="1" />
+            <param name="sIns1" value="ag2501" />
+            <param name="sIns2" value="ag2409" />
+            <param name="short_pos" value="0" />
+        </policy>
+    </policies>
+</policyserver>
