@@ -19,5 +19,9 @@
   - reference_line_provider_
 - CreateReferenceLineInfo
 ### TrafficDecider
+- 目的是设置reference_line drivable
+- 交通法规是否支持
+- 判断红绿灯等，加停止墙之类
+- `reference_line::path_decision`
 ### Plan
 - `public_road_planner`进入`scenario`流程
