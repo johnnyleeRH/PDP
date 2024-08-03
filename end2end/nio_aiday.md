@@ -1,0 +1,5 @@
+- 世界模型NWM
+- 端到端GOA
+- ref
+  - https://mp.weixin.qq.com/s/bKvnl55bP0Joyx1UBBGb3A
+  - https://mp.weixin.qq.com/s/lLftAkLsUXHwMkjTb9dHUw

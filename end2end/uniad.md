@@ -1,0 +1,12 @@
+- 2022/12/21
+- uniad
+- vad
+- vadv2
+- https://mp.weixin.qq.com/s?__biz=MzU2NjU3OTc5NA==&mid=2247582711&idx=1&sn=960fda06d7708ca33212ee6dbec8df6d&chksm=fca984cacbde0ddc402d70f8575350c3935de75f6aade17e431d238d1dacc862d17ce7e16789&token=283489872&lang=zh_CN&scene=21#wechat_redirect
+- end2end workshop: https://opendrivelab.com/e2ead/cvpr23.html
+- End-to-end Autonomous Driving: Challenges and Frontiers
+- 开源进展repo: https://github.com/OpenDriveLab/End-to-end-Autonomous-Driving
+- https://mp.weixin.qq.com/s?__biz=MzI3NDIzNDQ5MQ==&mid=2247484740&idx=1&sn=d6967f067583778712de97494789305a&chksm=eb166850dc61e1463b107a623b7afc9ec90ff8610986f15aafd242c87cba0bf265370dd6d1c6#rd
+- neture 液态神经网络
+- plankd: https://github.com/tulerfeng/PlanKD，知识蒸馏
+- BEVWorld: https://mp.weixin.qq.com/s/VA8W_TAssiw5tWlk3iOniA
