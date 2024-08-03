@@ -1,0 +1,5 @@
+- introduction
+  - ![page_1](intro_rl_1.png)
+- 四要素
+  - ![4factor](intro_rl_4_factor.png)
+- [ref](https://www.bilibili.com/video/BV16W421R7jA/?spm_id_from=333.880.my_history.page.click&vd_source=711f09f2f09ff87d7fcd85bbd346b892)
