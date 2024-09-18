@@ -1,0 +1,1 @@
+- [lilian weng](https://lilianweng.github.io/posts/2024-02-05-human-data-quality/)
